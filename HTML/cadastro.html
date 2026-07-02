@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Necessidade - Conexão Voluntária</title>
+    <!-- CSS unificado que garante a identidade visual em todas as páginas -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Cabeçalho (Consistência Visual) -->
+    <!-- Cabeçalho Padronizado -->
     <header class="main-header">
         <div class="logo">
             <h1>Conexão <span>Voluntária</span></h1>
@@ -20,28 +21,31 @@
         </nav>
     </header>
 
-    <!-- Container do Formulário -->
-    <main class="container">
-        <section class="form-container" style="max-width: 600px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-            <h2>Cadastrar Nova Demanda</h2>
-            <p class="subtitle" style="margin-bottom: 20px; color: #666;">Preencha todos os dados abaixo.</p>
+    <!-- Container Principal Responsivo -->
+    <main class="container" style="padding: 40px 20px;">
+        <section class="form-container" style="max-width: 600px; margin: 0 auto; background: #ffffff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+            <h2 style="margin-bottom: 5px; color: #34495e;">Cadastrar Nova Demanda</h2>
+            <p class="subtitle" style="margin-bottom: 25px; color: #666; font-size: 0.95rem;">
+                Preencha as informações abaixo para publicar a necessidade da sua instituição.
+            </p>
             
-            <form id="formCadastro" novalidate style="display: flex; flex-direction: column; gap: 15px;">
+            <!-- Formulário Estruturado -->
+            <form id="formCadastro" novalidate style="display: flex; flex-direction: column; gap: 20px;">
                 
                 <!-- 1. Campo: Nome da Instituição -->
-                <div class="form-group">
-                    <label for="nomeInstituicao" style="display: block; font-weight: 600; margin-bottom: 5px;">Nome da Instituição *</label>
-                    <input type="text" id="nomeInstituicao" name="nomeInstituicao" placeholder="Ex: Instituto Viva Voz" autocomplete="off" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
-                    <span class="error-message" id="erroNome" style="color: red; font-size: 0.85rem;"></span>
+                <div class="form-group" style="display: flex; flex-direction: column; gap: 5px;">
+                    <label for="nomeInstituicao" style="font-weight: 600; color: #333;">Nome da Instituição *</label>
+                    <input type="text" id="nomeInstituicao" name="nomeInstituicao" placeholder="Ex: Instituto Viva Voz" autocomplete="off" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem;">
+                    <span class="error-message" id="erroNome" style="color: #e74c3c; font-size: 0.85rem;"></span>
                 </div>
 
-                <!-- 2. Campo: Tipo de Ajuda (O campo novo entrou bem aqui!) -->
-                <div class="form-group">
-                    <label for="tipoAjuda" style="display: block; font-weight: 600; margin-bottom: 5px;">Tipo de Ajuda *</label>
-                    <select id="tipoAjuda" name="tipoAjuda" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                <!-- 2. Campo: Tipo de Ajuda (Seleção) -->
+                <div class="form-group" style="display: flex; flex-direction: column; gap: 5px;">
+                    <label for="tipoAjuda" style="font-weight: 600; color: #333;">Tipo de Ajuda *</label>
+                    <select id="tipoAjuda" name="tipoAjuda" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; background-color: #fff;">
                         <option value="">Selecione uma opção...</option>
                         <option value="Educação">Educação</option>
                         <option value="Saúde">Saúde</option>
                         <option value="Meio Ambiente">Meio Ambiente</option>
                         <option value="Doação de Alimentos">Doação de Alimentos</option>
-                        
+                        <optionNormally I can help with things like this, but I don't seem to have access to that content. You can try again or ask me for something else.
