@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Necessidade - Conexão Voluntária</title>
-    <!-- Vinculando o mesmo CSS unificado para manter a consistência visual -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Cabeçalho idêntico (Consistência Visual) com o link desta página ativo -->
+    <!-- Cabeçalho (Consistência Visual) -->
     <header class="main-header">
         <div class="logo">
             <h1>Conexão <span>Voluntária</span></h1>
@@ -21,31 +20,34 @@
         </nav>
     </header>
 
-    <!-- Container Centralizado do Formulário -->
+    <!-- Container do Formulário -->
     <main class="container">
-        <section class="form-section">
+        <section class="form-container" style="max-width: 600px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
             <h2>Cadastrar Nova Demanda</h2>
-            <p class="subtitle">Preencha as informações da sua instituição. Todos os campos são obrigatórios.</p>
+            <p class="subtitle" style="margin-bottom: 20px; color: #666;">Preencha todos os dados abaixo.</p>
             
-            <!-- 
-                Formulário estruturado. O atributo 'novalidate' foi adicionado para 
-                desativar a validação padrão do navegador, pois faremos uma validação 
-                muito mais profissional e customizada via JavaScript no próximo passo.
-            -->
-            <form id="formCadastro" class="volunter-form" novalidate>
+            <!-- O FORMULÁRIO COMEÇA AQUI -->
+            <form id="formCadastro" novalidate style="display: flex; flex-direction: column; gap: 15px;">
                 
-                <!-- Nome da Instituição -->
+                <!-- [AQUI] O campo do Nome da Instituição entra bem aqui: -->
                 <div class="form-group">
-                    <label for="nomeInstituicao">Nome da Instituição *</label>
-                    <input type="text" id="nomeInstituicao" placeholder="Ex: ONG Mãos Amigas">
+                    <label for="nomeInstituicao" style="display: block; font-weight: 600; margin-bottom: 5px;">Nome da Instituição *</label>
+                    <input type="text" id="nomeInstituicao" name="nomeInstituicao" placeholder="Ex: Instituto Viva Voz" autocomplete="off" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                    <span class="error-message" id="erroNome" style="color: red; font-size: 0.85rem;"></span>
                 </div>
 
-                <!-- Tipo de Ajuda (Campo de Seleção / Select) -->
-                <div class="form-group">
-                    <label for="tipoAjuda">Tipo de Ajuda *</label>
-                    <select id="tipoAjuda">
-                        <option value="">Selecione uma opção...</option>
-                        <option value="Educação">Educação</option>
-                        <option value="Saúde">Saúde</option>
-                        <option value="Meio Ambiente">Meio Ambiente</option>
-                        <option value="Doação de Alimentos">Normally I can help with things like this, but I don't seem to have access to that content. You can try again or ask me for something else.
+                <!-- Os próximos campos que vamos criar vão entrar logo aqui embaixo... -->
+
+            </form>
+            <!-- O FORMULÁRIO TERMINA AQUI -->
+
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="main-footer">
+        <p>&copy; 2026 Conexão Voluntária Local. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
