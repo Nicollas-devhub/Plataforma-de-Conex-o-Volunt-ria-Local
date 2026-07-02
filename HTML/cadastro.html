@@ -48,4 +48,29 @@
                         <option value="Saúde">Saúde</option>
                         <option value="Meio Ambiente">Meio Ambiente</option>
                         <option value="Doação de Alimentos">Doação de Alimentos</option>
-                        <optionNormally I can help with things like this, but I don't seem to have access to that content. You can try again or ask me for something else.
+                        <optionNormally
+                        <!-- 3. Campo: Título da Necessidade -->
+<div class="form-group">
+    <label for="tituloNecessidade" style="display: block; font-weight: 600; margin-bottom: 5px;">Título da Necessidade *</label>
+    <input 
+        type="text" 
+        id="tituloNecessidade" 
+        name="tituloNecessidade" 
+        placeholder="Ex: Ajuda com reforço escolar ou Coleta de lixo no parque" 
+        style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;"
+    >
+    <span class="error-message" id="erroTitulo" style="color: red; font-size: 0.85rem;"></span>
+</div>
+
+<!-- 4. Campo: Descrição Detalhada -->
+<div class="form-group">
+    <label for="descricaoNecessidade" style="display: block; font-weight: 600; margin-bottom: 5px;">Descrição Detalhada *</label>
+    <textarea 
+        id="descricaoNecessidade" 
+        name="descricaoNecessidade" 
+        rows="4" 
+        placeholder="Descreva detalhadamente o que a instituição precisa (ex: quantidade de voluntários, materiais específicos...)" 
+        style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; resize: vertical;"
+    ></textarea>
+    <span class="error-message" id="erroDescricao" style="color: red; font-size: 0.85rem;"></span>
+</div>
