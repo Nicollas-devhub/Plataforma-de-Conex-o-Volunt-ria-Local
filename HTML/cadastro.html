@@ -74,3 +74,32 @@
     ></textarea>
     <span class="error-message" id="erroDescricao" style="color: red; font-size: 0.85rem;"></span>
 </div>
+
+<!-- 6. Campo: Rua / Logradouro -->
+<div class="form-group" style="display: flex; flex-direction: column; gap: 5px;">
+    <label for="rua" style="font-weight: 600; color: #333;">Rua / Logradouro *</label>
+    <input type="text" id="rua" name="rua" placeholder="Aguardando CEP..." style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem;">
+    <span class="error-message" id="erroRua" style="color: #e74c3c; font-size: 0.85rem;"></span>
+</div>
+
+<!-- 7. Campo: Bairro -->
+<div class="form-group" style="display: flex; flex-direction: column; gap: 5px;">
+    <label for="bairro" style="font-weight: 600; color: #333;">Bairro *</label>
+    <input type="text" id="bairro" name="bairro" placeholder="Aguardando CEP..." style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem;">
+    <span class="error-message" id="erroBairro" style="color: #e74c3c; font-size: 0.85rem;"></span>
+</div>
+
+<!-- 8. Campo: Cidade -->
+<div class="form-group" style="display: flex; flex-direction: column; gap: 5px;">
+    <label for="cidade" style="font-weight: 600; color: #333;">Cidade *</label>
+    <!-- O atributo 'readonly' impede a edição manual, pois a API preencherá com precisão -->
+    <input type="text" id="cidade" name="cidade" placeholder="Aguardando CEP..." readonly style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; background-color: #f5f5f5; cursor: not-allowed;">
+    <span class="error-message" id="erroCidade" style="color: #e74c3c; font-size: 0.85rem;"></span>
+</div>
+
+<!-- 9. Campo: Estado -->
+<div class="form-group" style="display: flex; flex-direction: column; gap: 5px;">
+    <label for="estado" style="font-weight: 600; color: #333;">Estado *</label>
+    <input type="text" id="estado" name="estado" placeholder="Aguardando CEP..." readonly style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; background-color: #f5f5f5; cursor: not-allowed;">
+    <span class="error-message" id="erroEstado" style="color: #e74c3c; font-size: 0.85rem;"></span>
+</div>
