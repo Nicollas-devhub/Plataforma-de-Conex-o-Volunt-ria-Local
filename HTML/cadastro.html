@@ -26,28 +26,22 @@
             <h2>Cadastrar Nova Demanda</h2>
             <p class="subtitle" style="margin-bottom: 20px; color: #666;">Preencha todos os dados abaixo.</p>
             
-            <!-- O FORMULÁRIO COMEÇA AQUI -->
             <form id="formCadastro" novalidate style="display: flex; flex-direction: column; gap: 15px;">
                 
-                <!-- [AQUI] O campo do Nome da Instituição entra bem aqui: -->
+                <!-- 1. Campo: Nome da Instituição -->
                 <div class="form-group">
                     <label for="nomeInstituicao" style="display: block; font-weight: 600; margin-bottom: 5px;">Nome da Instituição *</label>
                     <input type="text" id="nomeInstituicao" name="nomeInstituicao" placeholder="Ex: Instituto Viva Voz" autocomplete="off" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
                     <span class="error-message" id="erroNome" style="color: red; font-size: 0.85rem;"></span>
                 </div>
 
-                <!-- Os próximos campos que vamos criar vão entrar logo aqui embaixo... -->
-
-            </form>
-            <!-- O FORMULÁRIO TERMINA AQUI -->
-
-        </section>
-    </main>
-
-    <!-- Rodapé -->
-    <footer class="main-footer">
-        <p>&copy; 2026 Conexão Voluntária Local. Todos os direitos reservados.</p>
-    </footer>
-
-</body>
-</html>
+                <!-- 2. Campo: Tipo de Ajuda (O campo novo entrou bem aqui!) -->
+                <div class="form-group">
+                    <label for="tipoAjuda" style="display: block; font-weight: 600; margin-bottom: 5px;">Tipo de Ajuda *</label>
+                    <select id="tipoAjuda" name="tipoAjuda" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                        <option value="">Selecione uma opção...</option>
+                        <option value="Educação">Educação</option>
+                        <option value="Saúde">Saúde</option>
+                        <option value="Meio Ambiente">Meio Ambiente</option>
+                        <option value="Doação de Alimentos">Doação de Alimentos</option>
+                        
