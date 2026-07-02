@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Necessidade - Conexão Voluntária</title>
+    <!-- Vinculando o mesmo CSS unificado para manter a consistência visual -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Cabeçalho (Mantendo padrão visual) -->
+    <!-- Cabeçalho idêntico (Consistência Visual) com o link desta página ativo -->
     <header class="main-header">
         <div class="logo">
             <h1>Conexão <span>Voluntária</span></h1>
@@ -20,23 +21,31 @@
         </nav>
     </header>
 
-    <!-- Seção do Formulário -->
+    <!-- Container Centralizado do Formulário -->
     <main class="container">
         <section class="form-section">
             <h2>Cadastrar Nova Demanda</h2>
-            <p class="subtitle">Preencha os dados abaixo para que voluntários encontrem sua instituição.</p>
+            <p class="subtitle">Preencha as informações da sua instituição. Todos os campos são obrigatórios.</p>
             
-            <!-- O formulário completo e funcionalidade JS serão implementados na Parte 2 -->
-            <form class="volunter-form">
-                <p style="text-align: center; color: #666; padding: 20px;">[Estrutura do Formulário pronta para a integração JavaScript]</p>
-            </form>
-        </section>
-    </main>
+            <!-- 
+                Formulário estruturado. O atributo 'novalidate' foi adicionado para 
+                desativar a validação padrão do navegador, pois faremos uma validação 
+                muito mais profissional e customizada via JavaScript no próximo passo.
+            -->
+            <form id="formCadastro" class="volunter-form" novalidate>
+                
+                <!-- Nome da Instituição -->
+                <div class="form-group">
+                    <label for="nomeInstituicao">Nome da Instituição *</label>
+                    <input type="text" id="nomeInstituicao" placeholder="Ex: ONG Mãos Amigas">
+                </div>
 
-    <!-- Rodapé padrão unificado -->
-    <footer class="main-footer">
-        <p>&copy; 2026 Conexão Voluntária Local. Todos os direitos reservados.</p>
-    </footer>
-
-</body>
-</html>
+                <!-- Tipo de Ajuda (Campo de Seleção / Select) -->
+                <div class="form-group">
+                    <label for="tipoAjuda">Tipo de Ajuda *</label>
+                    <select id="tipoAjuda">
+                        <option value="">Selecione uma opção...</option>
+                        <option value="Educação">Educação</option>
+                        <option value="Saúde">Saúde</option>
+                        <option value="Meio Ambiente">Meio Ambiente</option>
+                        <option value="Doação de Alimentos">Normally I can help with things like this, but I don't seem to have access to that content. You can try again or ask me for something else.

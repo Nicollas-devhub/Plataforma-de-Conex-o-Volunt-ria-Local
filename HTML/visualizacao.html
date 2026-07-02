@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar Necessidades - Conexão Voluntária</title>
+    <!-- Vinculando o mesmo CSS unificado para manter a consistência visual em todo o site -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho idêntico (Consistência Visual) com o link desta página marcado como 'active' -->
+    <header class="main-header">
+        <div class="logo">
+            <h1>Conexão <span>Voluntária</span></h1>
+        </div>
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="cadastro.html" class="nav-link">Cadastrar Necessidade</a>
+            <a href="visualizacao.html" class="nav-link active">Ver Necessidades</a>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal da Área do Voluntário -->
+    <main class="container">
+        
+        <!-- Seção de Título e Introdução da Página -->
+        <section class="page-header">
+            <h2>Oportunidades de Voluntariado</h2>
+            <p class="subtitle">Encontre abaixo as demandas ativas das ONGs parceiras e faça a diferença.</p>
+        </section>
+
+        <!-- 
+            Área de Filtros e Pesquisa (Requisito 3): 
+            Os inputs possuem IDs específicos para que o JavaScript consiga 
+            capturar a digitação e a seleção do usuário nas próximas etapas.
+        -->
+        <section class="filter-wrapper" style="margin-bottom: 30px; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                
+                <!-- Campo de Busca por palavra-chave (Título ou Descrição) -->
+                <div style="flex: 1; min-width: 250px;">
+                    <label for="campoPesquisa" style="display: block; font-weight: 600; margin-bottom: 5px;">Pesquisar por palavra-chave</label>
+                    <input type="text" id="campoPesquisa" placeholder="Ex: reforço, alimentos, parque..." style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                </div>
+
+                <!-- Filtro de Seleção por Categoria (Tipo de Ajuda) -->
+                <div style="flex: 1; min-width: 250px;">
+                    <label for="filtroTipo" style="display: block; font-weight: 600; margin-bottom: 5px;">Filtrar por Tipo de Ajuda</label>
+                    <select id="filtroTipo" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                        <option value="">Todos os tipos</option>
+                        <option value="Educação">Educação</option>
+                        <option value="Saúde">Saúde</option>
+                        <option value="Meio Ambiente">Meio Ambiente</option>
+                        <option value="Doação de Alimentos">Doação de Alimentos</Normally
