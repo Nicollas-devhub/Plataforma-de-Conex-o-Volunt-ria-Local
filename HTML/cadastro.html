@@ -103,3 +103,16 @@
     <input type="text" id="estado" name="estado" placeholder="Aguardando CEP..." readonly style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; background-color: #f5f5f5; cursor: not-allowed;">
     <span class="error-message" id="erroEstado" style="color: #e74c3c; font-size: 0.85rem;"></span>
 </div>
+
+<!-- 10. Campos de Contato -->
+<div class="form-group" style="display: flex; flex-direction: column; gap: 5px;">
+    <label for="emailContato" style="font-weight: 600; color: #333;">E-mail de Contato *</label>
+    <input type="email" id="emailContato" name="emailContato" placeholder="exemplo@instituicao.org" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem;">
+    <span class="error-message" id="erroEmail" style="color: #e74c3c; font-size: 0.85rem;"></span>
+</div>
+
+<div class="form-group" style="display: flex; flex-direction: column; gap: 5px;">
+    <label for="telefoneContato" style="font-weight: 600; color: #333;">Telefone de Contato *</label>
+    <input type="tel" id="telefoneContato" name="telefoneContato" placeholder="(11) 99999-9999" maxlength="15" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem;">
+    <span class="error-message" id="erroTelefone" style="color: #e74c3c; font-size: 0.85rem;"></span>
+</div>
