@@ -1,7 +1,5 @@
 # Plataforma-de-Conex-o-Volunt-ria-Local
 
-# Plataforma de Conexão Voluntária Local
-
 ## Sobre o Projeto
 
 Este projeto foi desenvolvido com o objetivo de aproximar instituições sociais (ONGs) de pessoas que desejam atuar como voluntárias. Muitas organizações ainda realizam a divulgação de suas necessidades de forma manual, dificultando a comunicação com possíveis voluntários.
