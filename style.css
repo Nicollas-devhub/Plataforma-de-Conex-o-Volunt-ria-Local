@@ -1,0 +1,196 @@
+/* ==========================================================================
+   1. CONFIGURAÇÕES GERAIS E VARIÁVEIS (Garante a consistência visual)
+   ========================================================================== */
+:root {
+    --primary-color: #2ecc71;   /* Verde voluntariado/esperança */
+    --secondary-color: #34495e; /* Azul escuro corporativo/neutro */
+    --light-bg: #f8f9fa;        /* Fundo claro para páginas */
+    --text-color: #333333;      /* Cor principal do texto */
+    --white: #ffffff;
+    --font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-stack);
+    background-color: var(--light-bg);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Mantém o rodapé sempre na base */
+}
+
+/* ==========================================================================
+   2. LAYOUT DO CABEÇALHO (HEADER) E NAVEGAÇÃO
+   ========================================================================== */
+.main-header {
+    background-color: var(--white);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+.logo h1 span {
+    color: var(--primary-color);
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 600;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* ==========================================================================
+   3. ELEMENTOS DA PÁGINA INICIAL (HERO SECTION)
+   ========================================================================== */
+.hero-section {
+    flex: 1; /* Preenche o espaço restante entre header e footer */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('../img/hero-bg.jpg') no-repeat center center/cover;
+    padding: 40px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Botões utilitários */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 10px;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: #27ae60;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.btn-secondary:hover {
+    background-color: #2c3e50;
+}
+
+/* ==========================================================================
+   4. ESTRUTURA DOS CONTAINERS GERAIS
+   ========================================================================== */
+.container {
+    flex: 1;
+    max-width: 1200px;
+    width: 90%;
+    margin: 40px auto;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* ==========================================================================
+   5. RODAPÉ (FOOTER)
+   ========================================================================== */
+.main-footer {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   6. DESIGN RESPONSIVO (Media Queries para Smartphones e Tablets)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .nav-link {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
